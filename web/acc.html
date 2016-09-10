@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function gen (){
+                var mee = 11 + Math.floor(Math.random()* 12)+1;
+                var meea = 11 + Math.floor(Math.random()* 12)+1;
+                var mees = 11 + Math.floor(Math.random()* 12)+1;
+                var gift = 45 + ""+ mee+""+meea+""+mees;
+                document.getElementById('mpho').value = ''+gift;
+                //alert(gift);
+            }
+        </script>
+    <body bgcolor="cyan">
+    <center><h2>You successfully logged in <br> Now you can create an account</h2></center>
+<form method="post" action="createaccount.jsp" >
+    <center>    
+            <table border="1" width="30%" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th colspan="2">Enter Information Here</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full Names</td>
+                        <td><input type="text" name="Full_Name" value="" onchange="gen ()" /></td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td><input type="text" name="Date_of_birth" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td><input type="text" name="ID" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><input type="text" name="Phone" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td><input type ="text" name = "email"  /></td>
+                    </tr>
+                    <tr>
+                        <td>account</td>
+                        <td><input type="text" name="account" value="" id="mpho" onchange="gen ()"/></td>
+                    </tr>
+                    alert
+  
+                    <tr>
+                        <td><input type="submit" value="Submit details" /></td>
+                        <td><input type="reset" value="Reset" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Already registered!! <a href="NEW.jsp">Login Here</a></td>
+                    </tr>
+               <tbody>
+            </table>
+            </center>
+    
+    
+        </form>
+    
+    
+      </body>
+</html>
